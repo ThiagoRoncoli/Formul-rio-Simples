@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #f2f2f2;
+    --cor-secundaria: #fff;
+    --cor-terciaria: rgb(7, 55, 145);
+    --cor-botao-hover: rgba(7, 55, 145, 0.849);
+    --cor-texto-claro: #fff;
+    --cor-borda: #ccc;
+    --cor-linha-tabela: #686868;
+    --font-principal: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--cor-primaria);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--font-principal);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.impresso {
+    background-color: var(--cor-secundaria);
+    box-shadow: 14px 14px 14px 0 rgba(128, 128, 128, 0.35);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: var(--font-principal);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--cor-borda);
+    font-size: 16px;
+    color: var(--cor-linha-tabela);
+}
+
+
+th {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto-claro);
+    font-weight: 600;
+}
+
+td {
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: var(--cor-primaria);
+}
+
+
+.impresso__botao__editar,
+.impresso__botao__excluir,
+.impresso__botao__cadastrar,
+.impresso__botao__baixar__relatorio {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: var(--font-principal);
+    transition: background-color 0.5s ease, transform 0.6s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.impresso__botao__baixar__relatorio,
+.impresso__botao__cadastrar{
+    margin-left: 5px;
+
+}
+
+.impresso__botao__editar:hover,
+.impresso__botao__excluir:hover,
+.impresso__botao__cadastrar:hover,
+.impresso__botao__baixar__relatorio:hover {
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.05);
+}
+
+form {
+    display: inline;
+}
+
+.impresso form {
+    display: inline-block;
+}
+
+.impresso__botao__cadastrar {
+    margin-bottom: 20px;
+}

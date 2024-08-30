@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #f2f2f2;
+
+    --cor-secundaria: #fff;
+
+    --cor-terciaria: rgb(7, 55, 145);
+
+    --font-principal: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: var(--cor-primaria);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    font-family: var(--font-principal);
+    font-size: 52px ;
+}
+
+.formulario{
+
+margin: 5px;
+font-family: var(--font-principal);
+}
+
+.formulario__atras{
+    background-color: var(--cor-secundaria);
+    box-shadow: 14px 14px 14px 0 rgba(128, 128, 128, 0.35);
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    gap: 10px;
+}
+
+label{
+    font-size: 24px;
+    left: 0;
+    top: 50%;
+    color: #686868;
+
+
+}
+
+
+input{
+    width: 350px;
+    height: 22px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.8s ease, transform 0.3s ease; /* Transição suave */
+    background-color: var(--cor-secundaria); /* Fundo fixo */
+
+
+}
+
+input:focus{
+    border-bottom: 2px solid #66afe9;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+
+
+.formulario__botao__enviar{
+    width: 300px;
+    font-size: 14px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--cor-terciaria);
+    height: 30px;
+    border-width: 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    color: white;
+    transition: background-color 0.5s ease, transform 0.6s ease;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    font-family: var(--font-principal);
+
+}
+
+.formulario__botao__enviar:hover{
+    background-color: rgba(7, 55, 145, 0.849);
+    border: none;
+    transform: scale(1.1);
+    font-family: var(--font-principal);
+}
+
+::placeholder{
+    color: #a0a0a0;
+    font-family: var(--font-principal);
+}
+
